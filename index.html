@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic tac toe</title>
+</head>
+<body>
+    <button id="restartGameBtn" class="">Restart</button>
+    <div id="winnerMessage" style="text-align: center;">
+        <h1 id="displayWinner"></h1>
+    </div>
+    <div id="stats">
+        <div>
+            <h2 id="playerHeader1">Player 1</h2>
+            <h3>Score: <span id="player1Score">0</span></h3>
+        </div>
+        <div>
+            <h2>Vs</h2>
+            <h3>:</h3>
+        </div>
+        <div>
+            <h2 id="playerHeader2">Player 2</h2>
+            <h3>Score: <span id="player2Score">0</span></h3>
+        </div>
+    </div>
+    <div class="container">
+        <div class="gridItem" id="grid1"></div>
+        <div class="gridItem" id="grid2"></div>
+        <div class="gridItem" id="grid3"></div>
+        <div class="gridItem" id="grid4"></div>
+        <div class="gridItem" id="grid5"></div>
+        <div class="gridItem" id="grid6"></div>
+        <div class="gridItem" id="grid7"></div>
+        <div class="gridItem" id="grid8"></div>
+        <div class="gridItem" id="grid9"></div>
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>
+
+<style>
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+h2, h3 {
+    text-align: center;
+}
+.active {
+    background-color: green;
+    color: #ffffff;
+}
+#restartGameBtn {
+    width: 100px;
+    margin: auto;
+    padding: 5px 15px;
+}
+#stats {
+    margin: auto;
+}
+#stats > div {
+    display: inline-block;
+}
+#stats > div:nth-child(1) {
+    margin-right: 10px;
+}
+#stats > div:nth-child(3) {
+    margin-left: 10px;
+}
+.container {
+    display: grid;
+    border: 1px solid black;
+    width: 50%;
+    height: 75%;
+    margin: auto;
+    grid-template-columns: 33% 33% auto;
+    grid-template-rows: 33% 33% auto;
+}
+.gridItem {
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+}   
+</style>
