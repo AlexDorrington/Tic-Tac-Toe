@@ -128,6 +128,7 @@ const myGameBoard = {
     },
     updateGameDom({name}) {
         gameBoard.style.display = 'none'
+        winnerText.style.display = 'block'
         restartGameBtn.classList.add('active')
         player1.symbol = ''
         player2.symbol = ''
@@ -161,6 +162,7 @@ const startGame = () => {
 
 //END GAME
 resetGame = () => {
+    winnerText.style.display = 'none'
     gameBoard.style.display = 'grid'
     restartGameBtn.classList.remove('active')
     player1.symbol = 'X'
