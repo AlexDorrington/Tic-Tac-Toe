@@ -112,7 +112,7 @@ const myGameBoard = {
             this.declareWinner(playerSymbol, ({name}) => {
                 winnerText.innerHTML = `Well done ${name}, you won`
             })
-        } else if (this.board[2][1] === playerSymbol && this.board[7][1] === playerSymbol && this.board[6][1] === playerSymbol) {
+        } else if (this.board[2][1] === playerSymbol && this.board[4][1] === playerSymbol && this.board[6][1] === playerSymbol) {
             this.declareWinner(playerSymbol, ({name}) => {
                 winnerText.innerHTML = `Well done ${name}, you won`
             })
