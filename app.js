@@ -116,6 +116,8 @@ const myGameBoard = {
             this.declareWinner(playerSymbol, ({name}) => {
                 winnerText.innerHTML = `Well done ${name}, you won`
             })
+        } else {
+            winnerText.innerHTML = `Tie`
         }
     },
     declareWinner(playerSymbol, callback) {
